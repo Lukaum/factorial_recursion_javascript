@@ -1,11 +1,11 @@
 function factorial(num) {
-    if (num === 1){
-        return num;
-    }
-    else {
-        return num * factorial(num - 1);
-    }
+  if (num == 0) {
+    return 1;
+  }
+  
+  return num * factorial(num - 1);
 }
-console.log(factorial(9));
+console.log(factorial(0));
+console.log(factorial(5));
 
 //calculating a factorial with recursion
